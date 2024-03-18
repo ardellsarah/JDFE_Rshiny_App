@@ -1,3 +1,5 @@
+install.packages(c("shiny","ggplot2","dplyr" ,"mvtnorm","MASS","shinythemes","shinyjs"))
+
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -5,6 +7,9 @@ library(mvtnorm)
 library(MASS)
 library(shinythemes)
 library(shinyjs)
+
+## SET WORKING DIRECTORY TO BE THE DOWNLOADED FUll REPOSITORY FOLDER- the below should work if you place the downloaded full repository on your desktop
+setwd('~/Desktop/JDFE_Rshiny_App-main/')
 
 CSS <- "
 p {
