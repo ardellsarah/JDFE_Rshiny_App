@@ -1,5 +1,3 @@
-install.packages(c("shiny","ggplot2","dplyr" ,"mvtnorm","MASS","shinythemes","shinyjs"))
-
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -8,8 +6,7 @@ library(MASS)
 library(shinythemes)
 library(shinyjs)
 
-## SET WORKING DIRECTORY TO BE THE DOWNLOADED FUll REPOSITORY FOLDER- the below should work if you place the downloaded full repository on your desktop
-setwd('~/Desktop/JDFE_Rshiny_App-main/')
+setwd("~/Dropbox/SKLab/Rshiny_JDFE")
 
 CSS <- "
 p {
@@ -253,7 +250,7 @@ server <- function(input, output, session) {
       ylim(ylimits_FitTraj())+
       xlab('Generations')+
       ylab('Fitness')+
-      ggtitle("Fitness Tajectory", subtitle = result)+
+      ggtitle("Fitness Trajectory", subtitle = result)+
       theme_classic()+
       theme(legend.position = 'right')+
       theme(axis.text = element_text(color = 'black', size = 11),
